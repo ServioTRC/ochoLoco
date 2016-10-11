@@ -1,0 +1,122 @@
+<%
+/*******************************************************************************
+ * Juego de Ocho Loco
+ * Aplicación de página única (SPA: Single-Page Application).
+ *
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+ * GNU General Public License for more details.
+ * You should have received a copy of the GNU General Public License
+ * along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ ******************************************************************************/
+%>
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<meta charset="utf-8" />
+<title>Juego de Ocho Loco</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<meta content="" name="description" />
+<meta content="" name="author" />
+
+<link href="/pace/pace-theme-flash.css" rel="stylesheet" type="text/css" media="screen"/>
+<link href="/boostrapv3/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+<link href="/boostrapv3/css/bootstrap-theme.min.css" rel="stylesheet" type="text/css"/>
+<link href="/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="/stylesheets/animate.min.css" rel="stylesheet" type="text/css"/>
+
+<link href="/stylesheets/style.css" rel="stylesheet" type="text/css"/>
+<link href="/stylesheets/responsive.css" rel="stylesheet" type="text/css"/>
+<link href="/stylesheets/custom-icon-set.css" rel="stylesheet" type="text/css"/>
+<link rel="stylesheet" href="/stylesheets/cliente-web-ochoLoco.css" />
+
+</head>
+<body class="horizontal-menu">
+<!-- Container -->
+<div class="page-container row-fluid">
+  <div class="page-content"> 
+    <div class="clearfix"></div>
+    <div class="container">  
+      <div class="content">  
+        <div class="page-title"> <a href="javascript:history.back()"></a>
+          <img src="/images/baraja.jpg" class="img-responsive" alt="" width="100" height="100"/>
+          <h1>
+            Juego de Ocho Loco
+          </h1>
+        </div>      
+        <div class="row" >
+          <div class="col-md-6">
+        		<div class="">
+  				    <div class="grid simple transparent">
+  					    <div class="grid-title ">
+                <!-- Si no quieres que quede en una tabla y verlo como una sola columna, elimina la tabla y ya -->
+  						      <table style="width: 100%">
+  							       <tr>
+  								        <td>
+                          		<div id="seccion_menu">
+                              <h2>
+                                Menú principal
+                              </h2>
+                            </div>
+  								        </td>
+  								        <td>
+                            <div id="seccion_error" class="oculto">
+                              <p>
+                                <span class="resalta">
+                                  <strong>
+                                    Error:
+                                  </strong>
+                                  <span id="mensaje_error">
+                                  </span>
+                                </span>
+                              </p>
+                              <button class="regresar_al_menu">
+                                Menú principal
+                              </button>
+                            </div>
+  								        </td>
+  							       </tr>
+  						      </table>
+  					    </div>
+  			      </div>
+        	  </div>
+          </div>
+        	<div class="col-md-6">
+  			     <div class="grid simple ">
+  				      <div class="grid-title">
+                  <p>
+                  <button class="btn btn-block btn-success" type="button" id="boton_crear_juego">Crear un nuevo juego</button>
+                  <button class="btn btn-block btn-success" type="button" id="boton_unir_juego">Unirse a jueo existente</button>
+                  </p>
+                </div>
+  			     </div>
+        	</div>
+          <div class="col-md-12">
+             <div class="grid simple ">
+                <div class="grid-title">
+                <strong>Videojuego realizado por: Karla Isabel, Roberto Garc&iacute;a y Salvador Pineda</strong>                          
+                </div>
+             </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="/javascripts/jquery-1.8.3.min.js" type="text/javascript"></script>
+<script src="/javascripts/bootstrap.min.js" type="text/javascript"></script>
+<script src="/javascripts/pace/pace.min.js" type="text/javascript"></script>
+<script src="/javascripts/jquery-validation/js/jquery.validate.min.js" type="text/javascript"></script>
+<script src="/javascripts/jquery-scrollbar/jquery.scrollbar.min.js" type="text/javascript"></script>
+<script src="/javascripts/core.js" type="text/javascript"></script> 
+<script src="/javascripts/cliente-web-ochoLoco.js"></script>
+</body>
+</html>

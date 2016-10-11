@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Komodo Project File - DO NOT EDIT -->
+<project id="9e33d27b-bb9d-4ca7-906c-b11311492131" kpf_version="5" name="juego.komodoproject">
+<preference-set idref="9e33d27b-bb9d-4ca7-906c-b11311492131" id="project" preftype="project">
+  <string relative="path" id="import_dirname"></string>
+  <long id="indentWidth">2</long>
+  <long id="prefs_version">1</long>
+  <boolean id="showEOL">1</boolean>
+  <boolean id="showWhitespace">1</boolean>
+  <long id="tabWidth">2</long>
+</preference-set>
+</project>

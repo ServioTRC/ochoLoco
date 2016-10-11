@@ -1,0 +1,174 @@
+<%
+/*******************************************************************************
+ * Juego de Ocho Loco
+ * Aplicación de página única (SPA: Single-Page Application).
+ *
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+ * GNU General Public License for more details.
+ * You should have received a copy of the GNU General Public License
+ * along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ ******************************************************************************/
+%>
+
+<!DOCTYPE html>
+
+<html lang="es">
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Juego de Ocho Loco</title>
+    <link rel="stylesheet" href="/bootstrap-3.3.6/dist/css/bootstrap.css">
+    <script src="/bootstrap-3.3.6/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="/stylesheets/cliente-web-ochoLoco.css" />
+    <script src="/javascripts/jquery-1.11.3.min.js"></script>
+    <script src="/javascripts/cliente-web-ochoLoco.js"></script>
+  </head>
+
+  <body>
+
+    <!------------------------------------------------------------------------->
+    <img src="/images/baraja.jpg" class="img-responsive" alt="" width="100" height="100"/>
+    <h1>
+      Juego de Ocho Loco
+    </h1>
+
+    <!------------------------------------------------------------------------->
+    <div id="seccion_menu">
+      <h2>
+        Menú principal
+      </h2>
+      <p>
+        <button id="boton_crear_juego">
+          Crear un nuevo juego
+        </button>
+        <button id="boton_unir_juego">
+          Unirse a un juego existente
+        </button>
+      </p>
+    </div>
+
+    <!------------------------------------------------------------------------->
+    <div id="seccion_error" class="oculto">
+      <p>
+        <span class="resalta">
+          <strong>
+            Error:
+          </strong>
+          <span id="mensaje_error">
+          </span>
+        </span>
+      </p>
+      <button class="regresar_al_menu">
+        Menú principal
+      </button>
+    </div>
+
+    <!------------------------------------------------------------------------->
+    <div id="seccion_mensajes" class="oculto">
+      <p id="mensaje_1">
+      </p>
+      <p id="mensaje_3">
+      </p>
+      <button id='boton_mensajes_regresar_al_menu' class="oculto regresar_al_menu">
+        Menú principal
+      </button>
+    </div>
+
+    <!------------------------------------------------------------------------->
+    <div id="seccion_solicitar_nombre" class="oculto">
+      <form id="form_nombre_del_juego">
+        <p>
+          <label for="nombre_del_juego">
+            Indica el nombre del juego:
+          </label>
+        </p>
+        <input id="nombre_del_juego" type="text" size="20"/>
+        <p>
+        <p>
+          <label for="jugadores">
+            Indica la cantidad de jugadores:
+          </label>
+        </p>
+        <p>
+          <input id="jugadores" type="text" size="2"/>
+        </p>
+          <button id="boton_continuar_crear_juego">
+            Continuar
+          </button>
+          <button class="regresar_al_menu">
+            Cancelar
+          </button>
+        </p>
+      </form>
+    </div>
+
+    <!------------------------------------------------------------------------->
+    <div id="seccion_sin_juegos" class="oculto">
+      <p>
+        No hay juegos disponibles.
+      </p>
+      <button class="regresar_al_menu">
+        Menú principal
+      </button>
+    </div>
+
+    <!------------------------------------------------------------------------->
+    <div id="seccion_lista_juegos" class="oculto">
+      <form id="form_lista_juegos">
+        <p>
+          <label for="lista_juego">
+            ¿A qué juego deseas unirte?
+          </label>
+          <select id="lista_juego" name="nombre">
+          </select>
+        </p>
+        <p>
+          <button id="boton_continuar_unir_juego">
+            Continuar
+          </button>
+          <button class="regresar_al_menu">
+            Cancelar
+          </button>
+        </p>
+      </form>
+    </div>
+
+    <!------------------------------------------------------------------------->
+    <div id="seccion_tablero" class="oculto">
+      <p id= "descarte" class="oculto">Carta descarte: </p>
+      <p id="mano"></p>
+      <button id="boton_tomar_baraja" class="oculto">
+             Tomar de la baraja
+      </button>
+    </div>
+    <!-------------------------------------------------------------------------->
+    <div id="seccion_comodin" class="oculto">
+      <p>
+        <strong>Elige el comodín que quieres</strong>
+      </p>
+      <p id="comodin">
+        <img src="/images/picas.png" class="img-responsive" width="100" height="100"/>
+        <img src="/images/corazones.png" class="img-responsive" width="100" height="100"/>
+        <img src="/images/diamantes.png" class="img-responsive" width="100" height="100"/>
+        <img src="/images/treboles.png" class="img-responsive" width="100" height="100"/>
+      </p>
+      
+      
+      
+    </div>
+    <!--------------------------------------------------------------------------->
+    <footer>
+      Karla Isabel, Roberto García y Salvador Pineda
+    </footer>
+
+  </body>
+
+</html>

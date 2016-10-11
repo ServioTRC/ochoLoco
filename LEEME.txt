@@ -1,0 +1,55 @@
+JUEGO DE OCHO LOCO
+=============================
+
+Esta es una aplicación web de Node que implementa el tradicional juego
+de ocho loco. Permite que múltiples jugadores jueguen simultáneamente.
+
+El software se distribuye bajo la licencia GPL 3. Ver el archivo
+'ochoLoco/licence.txt' para más detalles.
+
+0. REQUISITOS
+=============
+Para poder ejecutarse se requiere tener instalado el siguiente software:
+
+- Node 4.2.*
+- MongoDB 2.6.*
+
+1. INSTALACIÓN
+==============
+La aplicación requiere instalar varios módulos de Node. Teclea el siguiente
+comando desde la terminal dentro del directorio 'ochoLoco':
+
+      sudo npm install
+
+MongoDB debe estar corriendo en su configuración por omisión (localhost:27017).
+No es necesario crear explícitamente la base de datos ni las colecciones.
+
+2. CORRIENDO EL SERVIDOR
+========================
+Teclea en la terminal dentro del directorio 'ochoLoco' el siguiente comando:
+
+      npm start
+
+3. CORRIENDO EL CLIENTE DE TEXTO
+================================
+Para correr el cliente de texto (suponiendo que el servidor está corriendo
+en la misma máquina en el puerto 3000), en la terminal dentro del directorio
+'ochoLoco' teclea lo siguiente:
+
+      npm run-script cliente
+
+o alternativamente:
+
+      node cliente-texto-gato.js http://localhost:3000
+
+4. CORRIENDO EL CLIENTE WEB
+===========================
+En un navegador, ir al URL: http://localhost:3000/ochoLoco/
+Si se desea jugar en la misma computadora, se requerirán al menos dos
+navegadores distintos (por ejemplo Firefox y Chromium) o un mismo
+navegador abriendo una segunda ventana en modo incógnito.
+
+En los puntos 3 y 4 el nombre de dominio 'localhost' puede ser sustituido por
+la dirección IP de la máquina que funciona como servidor. Se puede usar el
+comando 'ifconfig' para obtener dicha dirección. Un mismo juego puede usar un
+cliente web y el otro cliente de modo texto.
